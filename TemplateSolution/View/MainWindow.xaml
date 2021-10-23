@@ -1,0 +1,11 @@
+﻿<Window Name="MyWindow" x:Class="TemplateSolution.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TemplateSolution" xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="{Binding Height, Mode=TwoWay}" Width="{Binding Width, Mode=TwoWay}"
+        d:DataContext="{d:DesignInstance local:TemplateViewModel, IsDesignTimeCreatable=False}">
+    <ContentPresenter x:Name="Presenter" Content="{Binding Viewbox}"/>
+</Window>
